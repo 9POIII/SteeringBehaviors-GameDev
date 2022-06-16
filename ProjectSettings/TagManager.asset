@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - TLD
   - BRD
+  - Bullet
   layers:
   - Default
   - TransparentFX
