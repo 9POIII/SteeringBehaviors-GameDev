@@ -57,5 +57,11 @@ public class PlayerController : MonoBehaviour
         Rigidbody.rotation = AimAngle;
     }
 
-
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Wolf")
+        {
+            Destroy(gameObject);            
+        }
+    }
 }

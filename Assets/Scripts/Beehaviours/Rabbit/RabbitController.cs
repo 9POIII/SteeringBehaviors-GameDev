@@ -53,7 +53,7 @@ public class RabbitController : Animal
     {
         switch (col.gameObject.tag)
         {
-            case "Bullet": gameObject.SetActive(false); break;
+            case "Bullet": Destroy(gameObject); break;
             case "Wolf" : Destroy(gameObject); break;
         }
     }

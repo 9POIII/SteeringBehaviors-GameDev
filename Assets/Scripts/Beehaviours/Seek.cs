@@ -15,8 +15,6 @@ public class Seek : DesiredVelocityProvider
     private void Start()
     {
         var rabbits = FindObjectsOfType<RabbitController>().Select(rabbit => rabbit.transform).ToList();
-        //var does = FindObjectsOfType<DoeController>().Select(doe => doe.transform).ToList();
-        Debug.Log(rabbits);
         var wolfs = FindObjectsOfType<WolfController>().Select(wolf => wolf.transform).ToList();
         objectsToFollow = rabbits.Union(wolfs).Select(_transform => _transform.position.ToVector2()).ToList();
     }

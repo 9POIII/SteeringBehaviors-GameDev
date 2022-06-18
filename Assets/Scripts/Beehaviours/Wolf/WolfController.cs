@@ -60,7 +60,7 @@ public class WolfController : Animal
     {
         switch (col.gameObject.tag)
         {
-            case "Bullet": gameObject.SetActive(false); break;
+            case "Bullet": Destroy(gameObject); break;
         }
     }
 }

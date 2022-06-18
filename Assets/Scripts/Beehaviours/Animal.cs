@@ -47,7 +47,6 @@ public class Animal : MonoBehaviour
                     steering += desiredVelocity - velocity;
                         
                 }
-
                 rigidbody2D.velocity = Vector2.ClampMagnitude(rigidbody2D.velocity + Vector2.ClampMagnitude(steering, steeringForceLimit), VelocityLimit);
             }
 
