@@ -53,10 +53,18 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\State.cs" />
+     <Compile Include="Assets\Scripts\Beehaviours\Wander.cs" />
+     <Compile Include="Assets\Scripts\Beehaviours\Wolf\WolfController.cs" />
+     <Compile Include="Assets\Scripts\Beehaviours\DesiredVelocityProvider.cs" />
+     <Compile Include="Assets\Scripts\Beehaviours\Rabbit\RabbitController.cs" />
+     <Compile Include="Assets\Scripts\Beehaviours\Seek.cs" />
      <Compile Include="Assets\Scripts\PlayerFolow.cs" />
+     <Compile Include="Assets\Scripts\Beehaviours\Flee.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Beehaviours\AvoidExitFromMap.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Beehaviours\Animal.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

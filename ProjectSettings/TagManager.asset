@@ -9,6 +9,7 @@ TagManager:
   - TLD
   - BRD
   - Bullet
+  - Wolf
   layers:
   - Default
   - TransparentFX
