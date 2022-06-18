@@ -47,3 +47,4 @@ public class AvoidExitFromMap : DesiredVelocityProvider
         return result.magnitude == 0 ? Animal.Velocity : result.normalized * maxSpeed;
     }
 }
+
