@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &5194873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5194874}
+  - component: {fileID: 5194875}
+  m_Layer: 0
+  m_Name: DeathZone (2)
+  m_TagString: DeathZone
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5194874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.96, y: -12.37, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1944298943}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &5194875
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194873}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0071134567, y: -0.1952486}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 27.233686, y: 0.87833977}
+  m_EdgeRadius: 0
 --- !u!1001 &19484930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,6 +187,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1041880054}
     m_Modifications:
+    - target: {fileID: 457894098880775216, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: Collider2D
+      value: 
+      objectReference: {fileID: 304467071}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: Collider2D
+      value: 
+      objectReference: {fileID: 304467071}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: velocityLimit
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: steeringForceLimit
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3344792955590268793, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -218,6 +291,68 @@ Transform:
   m_Father: {fileID: 846554846}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &38761042 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1580150865244630574, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+  m_PrefabInstance: {fileID: 2067566911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &270932500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 270932501}
+  - component: {fileID: 270932502}
+  m_Layer: 0
+  m_Name: DeathZone (1)
+  m_TagString: DeathZone
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &270932501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270932500}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.53, y: -2.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1944298943}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &270932502
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270932500}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 20}
+  m_EdgeRadius: 0
 --- !u!1001 &283227673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -225,6 +360,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1041880054}
     m_Modifications:
+    - target: {fileID: 457894098880775216, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: Collider2D
+      value: 
+      objectReference: {fileID: 443821759}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: Collider2D
+      value: 
+      objectReference: {fileID: 443821759}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: velocityLimit
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: steeringForceLimit
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3344792955590268793, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -278,6 +429,16 @@ PrefabInstance:
 --- !u!4 &283227674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3344792955590268793, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+  m_PrefabInstance: {fileID: 283227673}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &304467071 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1580150865244630574, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+  m_PrefabInstance: {fileID: 19484930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &443821759 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1580150865244630574, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
   m_PrefabInstance: {fileID: 283227673}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &465079477
@@ -722,7 +883,7 @@ MonoBehaviour:
   steeringForceLimit: 5
   Collider2D: {fileID: 0}
   m_RadiusOfDetectPlayer: 3
-  m_RadiusOfDetectWolf: 4
+  m_RadiusOfDetectWolf: 5
   m_DeerControllers:
   - {fileID: 2077857746}
   - {fileID: 897877730}
@@ -758,8 +919,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1
   circleDistance: 4
-  circleRadius: 2
-  angleChangeStep: 20
+  circleRadius: 4
+  angleChangeStep: 1
 --- !u!114 &897877733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,6 +967,80 @@ CircleCollider2D:
   m_Offset: {x: -0.0000019073486, y: -0.0000019073486}
   serializedVersion: 2
   m_Radius: 3.61
+--- !u!114 &897877736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897877728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19eeb4ab9bebe147966330a54501885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 897877727}
+  mass: 1
+  velocityLimit: 2
+  steeringForceLimit: 2
+  Collider2D: {fileID: 897877735}
+--- !u!1 &980189399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 980189400}
+  - component: {fileID: 980189401}
+  m_Layer: 0
+  m_Name: DeathZone (3)
+  m_TagString: DeathZone
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &980189400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980189399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.96, y: 8.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1944298943}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &980189401
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980189399}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0071134567, y: -0.1952486}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 27.233686, y: 0.87833977}
+  m_EdgeRadius: 0
 --- !u!1 &1041880053
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,6 +1140,63 @@ Transform:
   m_Father: {fileID: 1253152494}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1235385589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1235385590}
+  - component: {fileID: 1235385591}
+  m_Layer: 0
+  m_Name: DeathZone
+  m_TagString: DeathZone
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1235385590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235385589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.45, y: -2.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1944298943}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1235385591
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235385589}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 20}
+  m_EdgeRadius: 0
 --- !u!1 &1236760149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1318,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1041880054}
     m_Modifications:
+    - target: {fileID: 457894098880775216, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: Collider2D
+      value: 
+      objectReference: {fileID: 1408103221}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: Collider2D
+      value: 
+      objectReference: {fileID: 1408103221}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: velocityLimit
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: steeringForceLimit
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3344792955590268793, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1231,8 +1539,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1
   circleDistance: 4
-  circleRadius: 2
-  angleChangeStep: 20
+  circleRadius: 4
+  angleChangeStep: 1
 --- !u!114 &1310847455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1251,7 +1559,7 @@ MonoBehaviour:
   steeringForceLimit: 5
   Collider2D: {fileID: 0}
   m_RadiusOfDetectPlayer: 3
-  m_RadiusOfDetectWolf: 4
+  m_RadiusOfDetectWolf: 5
   m_DeerControllers:
   - {fileID: 2077857746}
   - {fileID: 897877730}
@@ -1275,6 +1583,28 @@ CircleCollider2D:
   m_Offset: {x: -0.0000009536743, y: 0}
   serializedVersion: 2
   m_Radius: 3.61
+--- !u!114 &1310847457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310847449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19eeb4ab9bebe147966330a54501885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 1310847450}
+  mass: 1
+  velocityLimit: 2
+  steeringForceLimit: 2
+  Collider2D: {fileID: 1310847456}
+--- !u!58 &1408103221 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1580150865244630574, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+  m_PrefabInstance: {fileID: 1294997290}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1417571376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,7 +1639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 519420031}
-  MoveSpeed: 3
+  MoveSpeed: 2
   Rigidbody: {fileID: 1417571378}
   _Weapon: {fileID: 813544192}
   m_isReloading: 0
@@ -1616,6 +1946,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535242022}
   m_CullTransparentMesh: 1
+--- !u!58 &1574130001 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1580150865244630574, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+  m_PrefabInstance: {fileID: 2058305490}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1602653992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,7 +2094,7 @@ MonoBehaviour:
   steeringForceLimit: 5
   Collider2D: {fileID: 0}
   m_RadiusOfDetectPlayer: 3
-  m_RadiusOfDetectWolf: 4
+  m_RadiusOfDetectWolf: 5
   m_DeerControllers:
   - {fileID: 1870330719}
   - {fileID: 1675557066}
@@ -1781,8 +2116,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1
   circleDistance: 4
-  circleRadius: 2
-  angleChangeStep: 20
+  circleRadius: 4
+  angleChangeStep: 1
 --- !u!114 &1675557068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1843,6 +2178,23 @@ CircleCollider2D:
   m_Offset: {x: -0.0000019073486, y: -0.0000019073486}
   serializedVersion: 2
   m_Radius: 3.61
+--- !u!114 &1675557072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675557064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19eeb4ab9bebe147966330a54501885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 1675557065}
+  mass: 1
+  velocityLimit: 2
+  steeringForceLimit: 2
+  Collider2D: {fileID: 1675557071}
 --- !u!1001 &1698326469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1909,144 +2261,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1696116440512200723, guid: 52b630ad51e300d4b87b4ef19ae5d4b8, type: 3}
   m_PrefabInstance: {fileID: 1698326469}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1747180863
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1747180868}
-  - component: {fileID: 1747180867}
-  - component: {fileID: 1747180866}
-  - component: {fileID: 1747180865}
-  - component: {fileID: 1747180864}
-  m_Layer: 0
-  m_Name: DeathZone
-  m_TagString: Wolf
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!61 &1747180864
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747180863}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -17.324097, y: 1.1091518}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.2855072, y: 19.521412}
-  m_EdgeRadius: 0
---- !u!61 &1747180865
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747180863}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -3.794623, y: 11.884478}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 26.349651, y: 2.2862053}
-  m_EdgeRadius: 0
---- !u!61 &1747180866
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747180863}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 10.217491, y: 2.1908803}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.6219292, y: 21.533703}
-  m_EdgeRadius: 0
---- !u!61 &1747180867
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747180863}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -3.303156, y: -9.031601}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 29.294945, y: 1.052208}
-  m_EdgeRadius: 0
---- !u!4 &1747180868
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747180863}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.62885475, y: -3.242883, z: 581.2799}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1944298943}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1755170449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,8 +2506,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1
   circleDistance: 4
-  circleRadius: 2
-  angleChangeStep: 20
+  circleRadius: 4
+  angleChangeStep: 1
 --- !u!114 &1870330719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2312,7 +2526,7 @@ MonoBehaviour:
   steeringForceLimit: 5
   Collider2D: {fileID: 0}
   m_RadiusOfDetectPlayer: 3
-  m_RadiusOfDetectWolf: 4
+  m_RadiusOfDetectWolf: 5
   m_DeerControllers:
   - {fileID: 1870330719}
   - {fileID: 1675557066}
@@ -2341,6 +2555,23 @@ CircleCollider2D:
   m_Offset: {x: -0.0000019073486, y: 0}
   serializedVersion: 2
   m_Radius: 3.61
+--- !u!114 &1870330722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870330714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19eeb4ab9bebe147966330a54501885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 1870330720}
+  mass: 1
+  velocityLimit: 2
+  steeringForceLimit: 2
+  Collider2D: {fileID: 1870330721}
 --- !u!1 &1944298942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,6 +2581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1944298943}
+  - component: {fileID: 1944298944}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -2370,10 +2602,25 @@ Transform:
   m_Children:
   - {fileID: 1439953261}
   - {fileID: 1253152494}
-  - {fileID: 1747180868}
+  - {fileID: 1235385590}
+  - {fileID: 270932501}
+  - {fileID: 5194874}
+  - {fileID: 980189400}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1944298944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944298942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34edfe28bee555b4394892dcd5c406c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2015401521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2484,7 +2731,7 @@ MonoBehaviour:
   steeringForceLimit: 5
   Collider2D: {fileID: 0}
   m_RadiusOfDetectPlayer: 3
-  m_RadiusOfDetectWolf: 4
+  m_RadiusOfDetectWolf: 5
   m_DeerControllers:
   - {fileID: 1870330719}
   - {fileID: 1675557066}
@@ -2506,8 +2753,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1
   circleDistance: 4
-  circleRadius: 2
-  angleChangeStep: 20
+  circleRadius: 4
+  angleChangeStep: 1
 --- !u!114 &2015401527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2568,6 +2815,23 @@ CircleCollider2D:
   m_Offset: {x: -0.0000009536743, y: 0}
   serializedVersion: 2
   m_Radius: 3.61
+--- !u!114 &2015401531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015401523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19eeb4ab9bebe147966330a54501885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 2015401524}
+  mass: 1
+  velocityLimit: 2
+  steeringForceLimit: 2
+  Collider2D: {fileID: 2015401530}
 --- !u!1001 &2058305490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2575,6 +2839,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1041880054}
     m_Modifications:
+    - target: {fileID: 457894098880775216, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: Collider2D
+      value: 
+      objectReference: {fileID: 1574130001}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: Collider2D
+      value: 
+      objectReference: {fileID: 1574130001}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: velocityLimit
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: steeringForceLimit
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3344792955590268793, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2703,6 +2983,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1041880054}
     m_Modifications:
+    - target: {fileID: 457894098880775216, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: Collider2D
+      value: 
+      objectReference: {fileID: 38761042}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: Collider2D
+      value: 
+      objectReference: {fileID: 38761042}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: velocityLimit
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: steeringForceLimit
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3344792955590268793, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2863,7 +3159,7 @@ MonoBehaviour:
   steeringForceLimit: 5
   Collider2D: {fileID: 0}
   m_RadiusOfDetectPlayer: 3
-  m_RadiusOfDetectWolf: 4
+  m_RadiusOfDetectWolf: 5
   m_DeerControllers:
   - {fileID: 2077857746}
   - {fileID: 897877730}
@@ -2899,8 +3195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1
   circleDistance: 4
-  circleRadius: 2
-  angleChangeStep: 20
+  circleRadius: 4
+  angleChangeStep: 1
 --- !u!114 &2077857749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2947,6 +3243,23 @@ CircleCollider2D:
   m_Offset: {x: -0.0000019073486, y: 0}
   serializedVersion: 2
   m_Radius: 3.61
+--- !u!114 &2077857752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077857744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19eeb4ab9bebe147966330a54501885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 2077857743}
+  mass: 1
+  velocityLimit: 2
+  steeringForceLimit: 2
+  Collider2D: {fileID: 2077857751}
 --- !u!1001 &2097542413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2954,6 +3267,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1041880054}
     m_Modifications:
+    - target: {fileID: 457894098880775216, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: Collider2D
+      value: 
+      objectReference: {fileID: 2138002723}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: Collider2D
+      value: 
+      objectReference: {fileID: 2138002723}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: velocityLimit
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258837589152322371, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+      propertyPath: steeringForceLimit
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3344792955590268793, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3007,6 +3336,11 @@ PrefabInstance:
 --- !u!4 &2097542414 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3344792955590268793, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
+  m_PrefabInstance: {fileID: 2097542413}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &2138002723 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1580150865244630574, guid: 39e91f2e6d128f14bb2bf91f5b964155, type: 3}
   m_PrefabInstance: {fileID: 2097542413}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &53660251786529675 stripped

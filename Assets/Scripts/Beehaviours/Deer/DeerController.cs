@@ -76,13 +76,13 @@ public class DeerController : Animal
     {
         m_Wander.Weight = 0.7f;
         m_Flee.Weight = 0f;
-        m_Seek.Weight = 0.4f;
+        m_Seek.Weight = 0.2f;
         
-        var centerOfStado = m_DeerControllers.Select(doe => doe.transform.position.ToVector2()).ToList().Average();
+        var centerOfStado = m_DeerControllers.Select(deer => deer.transform.position.ToVector2()).ToList().Average();
         m_Seek.objectsToFollow.Add(centerOfStado);
         
-        var averageSpeed = m_DeerControllers.Select(doe => doe.Velocity).ToList().Average();
-        m_Seek.objectsToFollow.Add(averageSpeed);
+        //var averageSpeed = m_DeerControllers.Select(deer => deer.Velocity).ToList().Average();
+        //m_Seek.objectsToFollow.Add(averageSpeed);
         
         m_Flee.fleeObjects.AddRange(m_DeerControllers.Except(this).Select(deer => deer.transform.position.ToVector2()));
     }
@@ -114,7 +114,6 @@ public class DeerController : Animal
     private void FindPlayers(Vector2 position, out List<Collider2D> players)
     {
         players = new List<Collider2D>();
-        // huntersFilter.SetLayerMask(LayerMask.GetMask("Player"));
         Physics2D.OverlapCircle(position, m_RadiusOfDetectPlayer, new ContactFilter2D().NoFilter(), players);
         players = players.Where(hunter => hunter.TryGetComponent<PlayerController>(out _)).ToList();
     }

@@ -10,6 +10,7 @@ TagManager:
   - BRD
   - Bullet
   - Wolf
+  - DeathZone
   layers:
   - Default
   - TransparentFX

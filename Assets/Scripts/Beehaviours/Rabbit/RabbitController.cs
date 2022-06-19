@@ -13,14 +13,18 @@ public class RabbitController : Animal
     //[SerializeField] private CircleCollider2D m_CircleCollider2D;
     [SerializeField] private Flee m_Flee;
     [SerializeField] private Wander m_Wander;
-
+    
     private void FixedUpdate()
     {
         var results = new List<Collider2D>();
         Physics2D.OverlapCircle(transform.position, m_RadiusOfDetectEnemy, new ContactFilter2D().NoFilter(), results);
-        //results.Remove(Collider2D);
-        results.RemoveAll(result => result.TryGetComponent<WolfController>(out _));
-        if (results.Count > 1) {
+        //results.RemoveAll(result => result.TryGetComponent<WolfController>(out _));
+        //results.RemoveAll(result => result.TryGetComponent<RabbitController>(out _));
+        //results.RemoveAll(result => result.TryGetComponent<DeerController>(out _));
+        //results.RemoveAll(result => result.TryGetComponent<PlayerController>(out _));
+        results.Remove(Collider2D);
+
+        if (results.Count > 0) {
             m_Flee.fleeObjects = results.Select(obj => obj.transform.position.ToVector2()).ToList();
             m_Wander.Weight = 0.5f;
             m_Flee.Weight = 1f;

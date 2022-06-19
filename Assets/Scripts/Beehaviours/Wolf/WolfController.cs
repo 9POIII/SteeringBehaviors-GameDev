@@ -24,7 +24,6 @@ public class WolfController : Animal
     {
         var results = new List<Collider2D>();
         Physics2D.OverlapCircle(transform.position, m_RadiusOfDetectEnemy, new ContactFilter2D().NoFilter(), results);
-        //results.Remove(collider);
         results.RemoveAll(result => result.TryGetComponent<WolfController>(out _));
         
         if (results.Count > 0) {
