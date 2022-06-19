@@ -1,8 +1,8 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using MyBox;
-using Project.Scripts;
 using UnityEngine;
+
 
 public class Animal : MonoBehaviour
 {
@@ -18,6 +18,9 @@ public class Animal : MonoBehaviour
         private const float Epsilon = 0.05f;
         public float VelocityLimit => velocityLimit;
         public Vector2 Velocity => velocity;
+
+        [SerializeField]
+        protected Collider2D Collider2D;
 
         public void ApplyForce(Vector2 force)
         {

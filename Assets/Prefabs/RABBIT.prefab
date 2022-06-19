@@ -105,13 +105,10 @@ MonoBehaviour:
   mass: 1
   velocityLimit: 3
   steeringForceLimit: 5
+  Collider2D: {fileID: 0}
   m_RadiusOfDetectEnemy: 3
-  m_CircleCollider2D: {fileID: 0}
   m_Flee: {fileID: 8316813699935095870}
   m_Wander: {fileID: 5082653196182514897}
-  m_ObjectsToFlee:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &2258837589152322371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +125,7 @@ MonoBehaviour:
   mass: 1
   velocityLimit: 3
   steeringForceLimit: 5
+  Collider2D: {fileID: 0}
 --- !u!114 &5082653196182514897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,9 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weight: 1
-  fleeObjects:
-  - {fileID: 0}
-  - {fileID: 0}
+  fleeObjects: []
 --- !u!114 &5660018689415694188
 MonoBehaviour:
   m_ObjectHideFlags: 0

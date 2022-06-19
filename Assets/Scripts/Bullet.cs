@@ -15,11 +15,7 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        switch (col.gameObject.tag)
-        {
-            case "Wall": Destroy(gameObject); break;
-            case "Enemy": Debug.Log("Enemy was killed"); Destroy(gameObject); break;
-        }
+        Destroy(gameObject);
     }
 
     public IEnumerator DestroyBullet()

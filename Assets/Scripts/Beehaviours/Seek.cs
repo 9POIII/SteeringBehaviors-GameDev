@@ -16,7 +16,8 @@ public class Seek : DesiredVelocityProvider
     {
         var rabbits = FindObjectsOfType<RabbitController>().Select(rabbit => rabbit.transform).ToList();
         var wolfs = FindObjectsOfType<WolfController>().Select(wolf => wolf.transform).ToList();
-        objectsToFollow = rabbits.Union(wolfs).Select(_transform => _transform.position.ToVector2()).ToList();
+        var deers = FindObjectsOfType<DeerController>().Select(deer => deer.transform).ToList();
+        objectsToFollow = rabbits.Union(wolfs).Union(deers).Select(_transform => _transform.position.ToVector2()).ToList();
     }
 
     public override Vector2 GetDesiredVelocity()
